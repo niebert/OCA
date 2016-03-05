@@ -7,7 +7,7 @@
 		<title>reveal.js – The HTML Presentation Framework</title>
 
 		<meta name="description" content="A framework for easily creating beautiful presentations using HTML">
-		<meta name="author" content="Hakim El Hattab">
+		<meta name="author" content="Engelbert Niehaus" >
 
 		<meta name="apple-mobile-web-app-capable" content="yes">
 		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -75,9 +75,9 @@
 				<section>
 					<h2>Mathematics</h2>
 					<p>
-						If you want to add mathematical 
-						A JavaScript display engine for mathematical expressions in you <a href="https://www.mathjax.org" target="_blank">MathJax</a> that works in all browsers.
-No more setup for readers. It just works.
+						If you want to add mathematical formulas you can use
+						a JavaScript display engine for mathematical expressions called <a href="https://www.mathjax.org" target="_blank">MathJax</a> that works in all browsers.
+No more setup for readers. It just works. The following slide shows an example.
 					</p>
 				</section>
 				<section>
@@ -107,19 +107,28 @@ No more setup for readers. It just works.
 						<h2>Basement Level 2</h2>
 						<p>That's it, time to go back up.</p>
 						<br>
-						<a href="#/2">
+						<a href="#/4">
 							<img width="178" height="238" data-src="reveal/images/downarrow.png" alt="Up arrow" style="transform: rotate(180deg); -webkit-transform: rotate(180deg);">
 						</a>
 					</section>
 				</section>
 
 				<section>
-					<h2>Slides</h2>
+					<h2>Slides with Audio Comment</h2>
 					<p>
-						Not a coder? Not a problem. There's a fully-featured visual editor for authoring these, try it out at <a href="http://slides.com" target="_blank">http://slides.com</a>.
+						Audio Comment can be added to a slide. User can listen to your comments on demand with the Audio Controls. 
+						You can record audio comments with Audacity <a href="http://www.audacityteam.org/" target="_blank">http://www.audacityteam.org/</a>.
+						<audio controls>
+							  <source src="mypresentation/audio/audio1.mp3" type="audio/mpeg">
+								Your browser does not support the audio element.
+						</audio> 			
 					</p>
 				</section>
-
+				<section data-background-video="mypresentation/video/demovideo.webm" data-background-color="#000000">
+					<p>
+					</p>
+					</section>
+					
 				<section>
 					<h2>Point of View</h2>
 					<p>
@@ -217,21 +226,22 @@ No more setup for readers. It just works.
 							Set <code>data-background="#dddddd"</code> on a slide to change the background color. All CSS color formats are supported.
 						</p>
 						<a href="#" class="navigate-down">
-							<img width="178" height="238" data-src="https://s3.amazonaws.com/hakim-static/reveal-js/arrow.png" alt="Down arrow">
+							<img width="178" height="238" data-src="reveal/images/downarrow.png" alt="Down arrow">
 						</a>
+			
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png">
+					<section data-background="reveal/images/image-placeholder.png">
 						<h2>Image Backgrounds</h2>
 						<pre><code class="hljs">&lt;section data-background="image.png"&gt;</code></pre>
 					</section>
-					<section data-background="https://s3.amazonaws.com/hakim-static/reveal-js/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
+					<section data-background="reveal/images/image-placeholder.png" data-background-repeat="repeat" data-background-size="100px">
 						<h2>Tiled Backgrounds</h2>
 						<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background="image.png" data-background-repeat="repeat" data-background-size="100px"&gt;</code></pre>
 					</section>
-					<section data-background-video="https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.mp4,https://s3.amazonaws.com/static.slid.es/site/homepage/v1/homepage-video-editor.webm" data-background-color="#000000">
+					<section data-background-video="mypresentation/video/demovideo.webm" data-background-color="#000000">
 						<div style="background-color: rgba(0, 0, 0, 0.9); color: #fff; padding: 20px;">
 							<h2>Video Backgrounds</h2>
-							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="video.mp4,video.webm"&gt;</code></pre>
+							<pre><code class="hljs" style="word-wrap: break-word;">&lt;section data-background-video="homepage-video-editor.mp4,video.webm"&gt;</code></pre>
 						</div>
 					</section>
 					<section data-background="http://i.giphy.com/90F8aUepslB84.gif">
