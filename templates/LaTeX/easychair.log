@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.23)  24 JAN 2016 20:53
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2015.2.23)  23 MAR 2016 23:28
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -601,82 +601,87 @@ File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 438.
- [5] [6]
+ [5] [6] [7]
 LaTeX Font Info:    Font shape `OT1/cmtt/bx/n' in size <12> not available
 (Font)              Font shape `OT1/cmtt/m/n' tried instead on input line 645.
- [7]
-<debug.pdf, id=263, 614.295pt x 794.97pt>
+
+<debug.pdf, id=264, 614.295pt x 794.97pt>
 File: debug.pdf Graphic file (type pdf)
  <use debug.pdf>
 Package pdftex.def Info: debug.pdf used on input line 660.
 (pdftex.def)             Requested size: 367.18256pt x 475.17827pt.
 
-<chairEC.pdf, id=267, 150.5625pt x 185.69376pt>
+<chairEC.pdf, id=268, 150.5625pt x 185.69376pt>
 File: chairEC.pdf Graphic file (type pdf)
  <use chairEC.pdf>
 Package pdftex.def Info: chairEC.pdf used on input line 764.
 (pdftex.def)             Requested size: 115.51767pt x 142.47743pt.
+ [8] [9 <./debug.pdf>]
 File: chairEC.pdf Graphic file (type pdf)
-
-<use chairEC.pdf>
+ <use chairEC.pdf>
 Package pdftex.def Info: chairEC.pdf used on input line 794.
 (pdftex.def)             Requested size: 115.51767pt x 142.47743pt.
- [8 <./chairEC.pdf>] [9 <./debug.pdf>]
 File: chairEC.pdf Graphic file (type pdf)
  <use chairEC.pdf>
 Package pdftex.def Info: chairEC.pdf used on input line 817.
 (pdftex.def)             Requested size: 115.51767pt x 142.47743pt.
+ [10 <./chairEC.pdf>]
 File: chairEC.pdf Graphic file (type pdf)
 
 <use chairEC.pdf>
 Package pdftex.def Info: chairEC.pdf used on input line 839.
 (pdftex.def)             Requested size: 115.51767pt x 142.47743pt.
- [10] <epic.pdf, id=363, 614.295pt x 794.97pt>
+ <epic.pdf, id=364, 614.295pt x 794.97pt>
 File: epic.pdf Graphic file (type pdf)
  <use epic.pdf>
 Package pdftex.def Info: epic.pdf used on input line 901.
 (pdftex.def)             Requested size: 367.18256pt x 475.17827pt.
 
-<throneEC.jpg, id=366, 515.526pt x 573.5829pt>
-File: throneEC.jpg Graphic file (type jpg)
- <use throneEC.jpg>
-Package pdftex.def Info: throneEC.jpg used on input line 932.
-(pdftex.def)             Requested size: 206.28247pt x 229.51662pt.
+[11] [12 <./epic.pdf>] <throneEC.jpg, id=425, 515.526pt x 573.5829pt>
 File: throneEC.jpg Graphic file (type jpg)
 
 <use throneEC.jpg>
+Package pdftex.def Info: throneEC.jpg used on input line 932.
+(pdftex.def)             Requested size: 206.28247pt x 229.51662pt.
+File: throneEC.jpg Graphic file (type jpg)
+ <use throneEC.jpg>
 Package pdftex.def Info: throneEC.jpg used on input line 933.
 (pdftex.def)             Requested size: 123.77074pt x 137.70647pt.
 File: throneEC.jpg Graphic file (type jpg)
  <use throneEC.jpg>
 Package pdftex.def Info: throneEC.jpg used on input line 934.
 (pdftex.def)             Requested size: 61.88222pt x 68.84448pt.
- [11] [12 <./epic.pdf>] (./easychair.bbl
-[13 <./throneEC.jpg>]
-Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [14])
+Overfull \hbox (83.9036pt too wide) in paragraph at lines 958--959
+[]\OT1/cmr/m/n/10 The CTAN [[]] and L[]T[]X com-mu-ni-ties [[],
+ []
 
+[13 <./throneEC.jpg>] (./easychair.bbl [14]
+Underfull \hbox (badness 4913) in paragraph at lines 107--110
+[]\OT1/cmr/m/n/9 Schenk, C. and MiKT[]X Con-trib-u-tors (2008--2011).
+ []
+
+) [15] 
 AED: lastpage setting LastPage
-[15]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1016.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 1016.
+[16]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1019.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1019.
  (./easychair.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1016.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1016.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1019.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1019.
 
 Package rerunfilecheck Info: File `easychair.out' has not changed.
 (rerunfilecheck)             Checksum: 2B7EE17C2693F144F9069574FA9E6A50;1641.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1016.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 1019.
  ) 
 Here is how much of TeX's memory you used:
- 9207 strings out of 494976
- 135521 string characters out of 6179137
- 249406 words of memory out of 5000000
+ 9208 strings out of 494976
+ 135528 string characters out of 6179137
+ 249005 words of memory out of 5000000
  12201 multiletter control sequences out of 15000+600000
  17005 words of font info for 68 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 46i,13n,45p,282b,494s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 46i,13n,45p,282b,475s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.4} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -714,10 +719,10 @@ m/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8
 /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt10.pfb></usr/s
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt9.pfb>
-Output written on easychair.pdf (15 pages, 815343 bytes).
+Output written on easychair.pdf (16 pages, 816732 bytes).
 PDF statistics:
- 595 PDF objects out of 1000 (max. 8388607)
- 532 compressed objects within 6 object streams
- 99 named destinations out of 1000 (max. 500000)
+ 594 PDF objects out of 1000 (max. 8388607)
+ 530 compressed objects within 6 object streams
+ 100 named destinations out of 1000 (max. 500000)
  234 words of extra memory for PDF output out of 10000 (max. 10000000)
 

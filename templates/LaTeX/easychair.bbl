@@ -1,187 +1,190 @@
-\begin{thebibliography}{10}
+\begin{thebibliography}{}
 
-\bibitem{url-package}
-Donald Arseneau.
+\bibitem[\protect\astroncite{Arseneau}{2011}]{url-package}
+Arseneau, D. (1986--2011).
 \newblock url: Verbatim with {URL}-sensitive line breaks.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/url.html}, last
-  viewed April 2010, 1986--2011.
+  viewed April 2010.
 
-\bibitem{graphicx-package}
-David Carlisle.
+\bibitem[\protect\astroncite{Carlisle}{1999}]{graphicx-package}
+Carlisle, D. (1995--1999).
 \newblock graphicx: Enhanced support for graphics.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/graphicx.html},
-  last viewed April 2010, 1995--1999.
+  last viewed April 2010.
 
-\bibitem{footmisc-package}
-Robin Fairbairns.
+\bibitem[\protect\astroncite{Fairbairns}{2009}]{footmisc-package}
+Fairbairns, R. (1986--2009).
 \newblock footmisc: A range of footnote options.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/footmisc.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{rotating-package}
-Robin Fairbairns and Sebastian Rahtz.
+\bibitem[\protect\astroncite{Fairbairns and Rahtz}{2009}]{rotating-package}
+Fairbairns, R. and Rahtz, S. (2001--2009).
 \newblock rotating: Rotation tools, including rotated full-page floats.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/rotating.html},
-  last viewed April 2010, 2001--2009.
+  last viewed April 2010.
 
-\bibitem{algorithm2e-package}
-Christophe Fiorio.
+\bibitem[\protect\astroncite{Fiorio}{2009}]{algorithm2e-package}
+Fiorio, C. (1986--2009).
 \newblock algorithm2e: Floating algorithm environment with algorithmic
   keywords.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/algorithm2e.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{lastpage-package}
-Jeffrey Goldberg.
+\bibitem[\protect\astroncite{Goldberg}{2010}]{lastpage-package}
+Goldberg, J. (1986--2010).
 \newblock lastpage: Reference last page for {Page N of M} type footers.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/lastpage.html},
-  last viewed April 2010, 1986--2010.
+  last viewed April 2010.
 
-\bibitem{pdflatex-instructions}
-Carl Gutwin.
+\bibitem[\protect\astroncite{Gutwin}{2006}]{pdflatex-instructions}
+Gutwin, C. (2006).
 \newblock Instructions for pdflatex.
 \newblock \url{http://www.cs.usask.ca/~gutwin/gi/pdflatex.htm}, last viewed
-  April 2010, 2006.
+  April 2010.
 
-\bibitem{empheq-package}
-Morten H{\o}gholm.
+\bibitem[\protect\astroncite{H{\o}gholm}{2007}]{empheq-package}
+H{\o}gholm, M. (2002--2007).
 \newblock empheq: {EMPHasizing EQuations}.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/empheq.html},
-  last viewed April 2010, 2002--2007.
+  last viewed April 2010.
 
-\bibitem{texshop}
-Richard Koch, Max Horn, Gerben Wierda, and {Various Contributors}.
+\bibitem[\protect\astroncite{Koch et~al.}{2011}]{texshop}
+Koch, R., Horn, M., Wierda, G., and {Various Contributors} (2001--2011).
 \newblock {\TeX}shop.
-\newblock \url{http://www.texshop.org}, 2001--2011.
+\newblock \url{http://www.texshop.org}.
 
-\bibitem{easychair-latex-class}
-Serguei~A. Mokhov, Geoff Sutcliffe, and Andrei Voronkov.
+\bibitem[\protect\astroncite{Mokhov et~al.}{2011}]{easychair-latex-class}
+Mokhov, S.~A., Sutcliffe, G., and Voronkov, A. (2008--2011).
 \newblock The {\sf easychair} class file documentation and guide, for authors
   and editors.
-\newblock [online], 2008--2011.
+\newblock [online].
 \newblock Available at \url{http://easychair.org/easychair.zip}.
 
-\bibitem{listings-package}
-Brooks Moses and Carsten Heinz.
+\bibitem[\protect\astroncite{Moses and Heinz}{2007}]{listings-package}
+Moses, B. and Heinz, C. (2006--2007).
 \newblock listings: Typeset source code listings using {\LaTeX}.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/listings.html},
-  last viewed April 2010, 2006--2007.
+  last viewed April 2010.
 
-\bibitem{eso-pic-package}
-Rolf Niepraschk.
+\bibitem[\protect\astroncite{Niepraschk}{2009}]{eso-pic-package}
+Niepraschk, R. (1998--2009).
 \newblock eso-pic: Absolute positioning of graphics and ship out actions.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/eso-pic.html},
-  last viewed April 2010, 1998--2009.
+  last viewed April 2010.
 
-\bibitem{pdflscape-package}
-Heiko Oberdiek.
+\bibitem[\protect\astroncite{Oberdiek}{2008}]{pdflscape-package}
+Oberdiek, H. (2001--2008).
 \newblock pdflscape: Make landscape pages display as landscape.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/pdflscape.html},
-  last viewed April 2010, 2001--2008.
+  last viewed April 2010.
 
-\bibitem{hyperref-package}
-Heiko Oberdiek and Sebastian Rahtz.
+\bibitem[\protect\astroncite{Oberdiek and Rahtz}{2010}]{hyperref-package}
+Oberdiek, H. and Rahtz, S. (2001--2010).
 \newblock hyperref: Extensive support for hypertext in {\LaTeX}.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/hyperref.html},
-  last viewed April 2010, 2001--2010.
+  last viewed April 2010.
 
-\bibitem{texlive}
-Sebastian Rahtz, Karl Berry, Manuel P\'egouri\'e-Gonnard, Norbert Preining,
-  Peter Breitenlohner, Reinhard Kotucha, Siep Kroonenberg, Staszek
-  Wawrykiewicz, Tomasz Trzeciak, Vladimir Volovich, and {\TeX user groups}.
+\bibitem[\protect\astroncite{Rahtz et~al.}{2009}]{texlive}
+Rahtz, S., Berry, K., P\'egouri\'e-Gonnard, M., Preining, N., Breitenlohner,
+  P., Kotucha, R., Kroonenberg, S., Wawrykiewicz, S., Trzeciak, T., Volovich,
+  V., and {\TeX user groups} (1996--2009).
 \newblock {{\TeX} Live}.
-\newblock \url{http://tug.org/texlive/}, last viewed April 2010, 1996--2009.
+\newblock \url{http://tug.org/texlive/}, last viewed April 2010.
 
-\bibitem{miktex}
-Christian Schenk and {MiK{\TeX} Contributors}.
+\bibitem[\protect\astroncite{Schenk and {MiK{\TeX}
+  Contributors}}{2011}]{miktex}
+Schenk, C. and {MiK{\TeX} Contributors} (2008--2011).
 \newblock {MiK{\TeX}}.
-\newblock \url{http://miktex.org}, last viewed April 2010, 2008--2011.
+\newblock \url{http://miktex.org}, last viewed April 2010.
 
-\bibitem{mathptmx-package}
-Walter Schmidt, Alan Jeffrey, Sebastian Rahtz, and Ulrik Vieth.
+\bibitem[\protect\astroncite{Schmidt et~al.}{2009}]{mathptmx-package}
+Schmidt, W., Jeffrey, A., Rahtz, S., and Vieth, U. (1986--2009).
 \newblock mathptmx: Use {Times} as default text font, and provide maths
   support.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/mathptmx.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{led}
-Adam Sk\'orczy\'nski, Sebastian Deorowicz, and {LEd Contributors}.
+\bibitem[\protect\astroncite{Sk\'orczy\'nski et~al.}{2011}]{led}
+Sk\'orczy\'nski, A., Deorowicz, S., and {LEd Contributors} (2004--2011).
 \newblock {LEd} ({\LaTeX} editor).
-\newblock \url{http://latexeditor.org}, last viewed April 2010, 2004--2011.
+\newblock \url{http://latexeditor.org}, last viewed April 2010.
 
-\bibitem{gmake}
-Richard Stallman, Roland McGrath, Paul Smith, and {the GNU Project}.
+\bibitem[\protect\astroncite{Stallman et~al.}{2006}]{gmake}
+Stallman, R., McGrath, R., Smith, P., and {the GNU Project} (1997--2006).
 \newblock {GNU Make}.
-\newblock Free Software Foundation, Inc., [online], 1997--2006.
+\newblock Free Software Foundation, Inc., [online].
 \newblock \url{http://www.gnu.org/software/make/}.
 
-\bibitem{amsthm-package}
-{The American Mathematical Society}.
+\bibitem[\protect\astroncite{{The American Mathematical
+  Society}}{2004}]{amsthm-package}
+{The American Mathematical Society} (1995--2004).
 \newblock amsthm: {\LaTeX} package for theorem setup ({AMS} style).
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/amsthm.html},
-  last viewed April 2010, 1995--2004.
+  last viewed April 2010.
 
-\bibitem{ctan}
-{The CTAN team}.
+\bibitem[\protect\astroncite{{The CTAN team}}{2011}]{ctan}
+{The CTAN team} (1992--2011).
 \newblock {CTAN}: the comprehensive {\TeX} archive network.
-\newblock \url{ctan.org}, 1992--2011.
+\newblock \url{ctan.org}.
 
-\bibitem{fink}
-{The Fink Project}.
+\bibitem[\protect\astroncite{{The Fink Project}}{2011}]{fink}
+{The Fink Project} (2001--2011).
 \newblock Fink.
-\newblock [online], 2001--2011.
+\newblock [online].
 \newblock \url{http://www.finkproject.org/}.
 
-\bibitem{latexsym-package}
-{The LaTeX Team}.
+\bibitem[\protect\astroncite{{The LaTeX Team}}{2009a}]{latexsym-package}
+{The LaTeX Team} (1986--2009a).
 \newblock latexsym: Base sources of {\LaTeX}.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/latex-base.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{makeidx-package}
-{The LaTeX Team}.
+\bibitem[\protect\astroncite{{The LaTeX Team}}{2009b}]{makeidx-package}
+{The LaTeX Team} (1986--2009b).
 \newblock latexsym: Standard package for creating indexes.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/makeidx.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{geometry-package}
-Hideo Umeki.
+\bibitem[\protect\astroncite{Umeki}{2008}]{geometry-package}
+Umeki, H. (1996--2008).
 \newblock geometry: Flexible and complete interface to document dimensions.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/geometry.html},
-  last viewed April 2010, 1996--2008.
+  last viewed April 2010.
 
-\bibitem{fancyhdr-package}
-Piet van Oostrum.
+\bibitem[\protect\astroncite{van Oostrum}{2009}]{fancyhdr-package}
+van Oostrum, P. (1986--2009).
 \newblock fancyhdr: Extensive control of page headers and footers in
   {\LaTeX2e}.
 \newblock
   \url{http://www.ctan.org/tex-archive/help/Catalogue/entries/fancyhdr.html},
-  last viewed April 2010, 1986--2009.
+  last viewed April 2010.
 
-\bibitem{easychair}
-Andrei Voronkov.
+\bibitem[\protect\astroncite{Voronkov}{2011}]{easychair}
+Voronkov, A. (2004--2011).
 \newblock {EasyChair} conference system.
-\newblock \url{easychair.org}, 2004--2011.
+\newblock \url{easychair.org}.
 
-\bibitem{texniccenter}
-Sven Wiegand and {{\TeX}nicCenter Contributors}.
+\bibitem[\protect\astroncite{Wiegand and {{\TeX}nicCenter
+  Contributors}}{2011}]{texniccenter}
+Wiegand, S. and {{\TeX}nicCenter Contributors} (1998--2011).
 \newblock {{\TeX}nicCenter}.
-\newblock \url{http://texniccenter.org}, last viewed April 2010, 1998--2011.
+\newblock \url{http://texniccenter.org}, last viewed April 2010.
 
 \end{thebibliography}
