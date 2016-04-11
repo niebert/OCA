@@ -1,0 +1,180 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>Content of Presentation Folder</title>
+
+		<meta name="description" content="Content of Presentation Folder">    
+
+		<meta name="author" content="Patricia D Souza" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+				<h1>Content of Presentation Folder</h1>
+					<h3>Name: Engelbert Niehaus</h3>
+					<p>
+					<h4>Date: April 10th, 2016</h4>
+					</p>
+				</section>  
+
+
+<section id="folders-organisation" class="level2">
+<h2>Folders &amp; Organisation</h2>
+<p>The list describes the purpose of these folders and provides a small survey about the files that are stored in these folders:</p>
+<ul>
+<li><b>reveal:</b> Presentation Libraries (<a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a>).</li>
+<li><b>mathjax:</b> Render Mathemematical Formulas (<a href="https://github.com/mathjax/MathJax">https://github.com/mathjax/MathJax</a>).</li>
+<li><b>pandoc4OCA:</b> Convert Markdown and Wikipedia file into Reveal</li>
+<li><b>mypresentation:</b> Media files for the reveal presentation &quot;mypresentation.html&quot;</li>
+</ul>
+</section>
+<section id="folder-reveal" class="level2">
+<h2>Folder reveal:</h2>
+<ul>
+<li>Contains all the files that allows the use of all features of the reveal project.</li>
+<li>The libraries created by Hakim El Hattab are embedded in all the reveal presentations.</li>
+<li>The content of the &quot;reveal&quot; folder can be replaces by newer versions of &quot;reveal.js&quot;</li>
+<li>URL: <a href="https://github.com/hakimel/reveal.js">https://github.com/hakimel/reveal.js</a></li>
+</ul>
+</section>
+<section id="folder-mathjax" class="level2">
+<h2>Folder mathjax:</h2>
+<ul>
+<li>In standard <a href="https://github.com/hakimel/reveal.js">reveal.js</a> presentations mathematical formulas are rendered with MathJax by importing the MathJax libraries via internet access.</li>
+<li>This has the disadvantage that mathematical formulas are not rendered, when you do not have internet connectivity or the MathJax libraries are removed from the browser cache.</li>
+<li>The local MathJax libraries avoid these problems. The content of the &quot;mathjax&quot; folder can be replaces by newer versions of &quot;MathJax&quot;</li>
+<li>URL: <a href="https://github.com/mathjax/MathJax">https://github.com/mathjax/MathJax</a></li>
+<li>Homepage: <a href="http://www.mathjax.org">http://www.mathjax.org</a></li>
+</ul>
+</section>
+<section id="folder-pandoc4oca" class="level2">
+<h2>Folder pandoc4OCA:</h2>
+<ul>
+<li>Provides Scripts to create reveal-presentation from MarkDown and Wikipedia Content by application of the OpenSource document conversion tool pandoc.</li>
+<li>Provides the Template <em>tpl4reveal.html</em> that is used for the reveal presentation</li>
+</ul>
+</section>
+<section id="folder-mypresentation" class="level2">
+<h2>Folder mypresentation:</h2>
+<ul>
+<li>contains all media files (Video, Audio, Images, ...) that are used in the reveal presentation.</li>
+<li>Recommendation: Use the same directory name as the name for the reveal presentation.</li>
+<li>e.g. for &quot;<em>mypresentation.html</em>&quot; use as media directory &quot;<em>mypresentation</em>&quot;</li>
+</ul>
+</section>
+<section id="commands-for-markdown" class="level2">
+<h2>Commands for MarkDown</h2>
+<ul>
+<li>The file <em>README_pres.txt</em> is e.g. a text file in MarkDown and converted into Reveal.</li>
+<li>The following PanDoc command creates a reveal presentation from Markdown.</li>
+</ul>
+<pre><code>pandoc -t html5 --template=tpl4reveal.html \
+      --standalone --section-divs \
+      --variable theme=&quot;beige&quot; \
+      --variable transition=&quot;slide&quot; \
+      slides.md -o slides.html</code></pre>
+</section>
+<section id="commands-for-wikimedia" class="level2">
+<h2>Commands for WikiMedia</h2>
+<ul>
+<li>Source Files from Wikipedia (e.g. Edit Article) can be retrieved and stored as text file.</li>
+<li>The following PanDoc command creates a reveal presentation from the Wikipedia file <em>&quot;wikipedia.wiki&quot;</em>.</li>
+</ul>
+<pre><code>pandoc -f mediawiki -t html5 --template=tpl4reveal.html \
+     --standalone --section-divs \
+     --variable theme=&quot;beige&quot; \
+     --variable transition=&quot;slide&quot; --mathjax \
+     wikipedia.wiki -o wikipedia.html </code></pre>
+</section>
+<section id="scripts-for-markdown-and-wikimedia" class="level2">
+<h2>Scripts for MarkDown and WikiMedia</h2>
+<p>Copy a file into the <em>pandoc4OCA</em> folder an run the following scripts:</p>
+<ul>
+<li><p>for MarkDown to Reveal conversion:</p>
+<pre><code>sh md2reveal.sh mysource.md</code></pre></li>
+<li><p>for Wikipedia Source to Reveal conversion:</p>
+<pre><code>sh wiki2reveal.sh mysource.wiki</code></pre>
+<p>Install pandoc on Linux or Mac and run shell script from terminal</p></li>
+</ul>
+</section>
+<section id="learning-markdown-wikimedia" class="level2">
+<h2>Learning Markdown &amp; WikiMedia</h2>
+<ul>
+<li>Learning Markdown <a href="http://www.markdowntutorial.com">http://www.markdowntutorial.com</a></li>
+<li>Learning WikiMedia <a href="https://en.wikipedia.org/wiki/Wikipedia:Tutorial">https://en.wikipedia.org/wiki/Wikipedia:Tutorial</a></li>
+</ul>
+</section>
+			</div>
+		</div>
+
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.js"></script>
+
+<script>
+ 			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'beige',   
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					mathjax: './mathjax/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: './reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: './reveal/plugin/notes/notes.js', async: true },
+					{ src: './reveal/plugin/math/math.js', async: true }
+				]
+			});
+
+</script>
+
+
+</body>
+</html>
