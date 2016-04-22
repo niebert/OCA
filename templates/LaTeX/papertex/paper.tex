@@ -1,0 +1,385 @@
+% easychair.tex,v 3.4 2015/12/10
+
+\documentclass{easychair}
+%\documentclass[EPiC]{easychair}
+%\documentclass[debug]{easychair}
+%\documentclass[verbose]{easychair}
+%\documentclass[notimes]{easychair}
+%\documentclass[withtimes]{easychair}
+%\documentclass[a4paper]{easychair}
+%\documentclass[letterpaper]{easychair}
+
+\usepackage{doc}
+
+% use this if you have a long article and want to create an index
+% \usepackage{makeidx}
+
+% In order to save space or manage large tables or figures in a
+% landcape-like text, you can use the rotating and pdflscape
+% packages. Uncomment the desired from the below.
+%
+% \usepackage{rotating}
+% \usepackage{pdflscape}
+
+% Some of our commands for this guide.
+%
+\newcommand{\easychair}{\textsf{easychair}}
+\newcommand{\miktex}{MiK{\TeX}}
+\newcommand{\texniccenter}{{\TeX}nicCenter}
+\newcommand{\makefile}{\texttt{Makefile}}
+\newcommand{\latexeditor}{LEd}
+
+%\makeindex
+
+%% Front Matter
+%%
+% Regular title as in the article class.
+%
+\title{ Put Your Full Title In Here }
+
+% Authors are joined by \and. Their affiliations are given by \inst, which indexes
+% into the list defined using \institute
+%
+
+\author{ 
+	     
+	    Bert Niehaus\inst{1}\thanks{Thanks 1} 
+	    
+  \and 
+	    Paul Meyer\inst{2}\thanks{Thanks 2} 
+	    
+  \and 
+	    Anna Miller\inst{3}\thanks{Thanks 3} 
+	    
+  \and 
+	    Charles Sinner\inst{4}\thanks{Thanks 4}
+}
+
+% Institutes for affiliations are also joined by \and,
+\institute{
+	 
+	   University Koblenz-Landau \\
+	   \email{niehaus@uni-landau.de}
+	
+  \and 
+	   Uni Meyer \\
+	   \email{meyer@mail.com}
+	
+  \and 
+	   Uni Miller \\
+	   \email{miller@mail.com}
+	
+  \and 
+	   Uni Meyer \\
+	   \email{Siner@mail.com}
+}
+%  \authorrunning{} has to be set for the shorter version of the authors' names;
+% otherwise a warning will be rendered in the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \authorrunning
+% will be rejected by EasyChair
+
+\authorrunning{Bert Niehaus, Paul Meyer, Anna Miller, Charles Sinner}
+
+% \titlerunning{} has to be set to either the main title or its shorter
+% version for the running heads. When processed by
+% EasyChair, this command is mandatory: a document without \titlerunning
+% will be rejected by EasyChair
+\titlerunning{Put Your Short Title In Here}
+
+
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}Put Your Abstract In Here\end{abstract}
+
+% The table of contents below is added for your convenience. Please do not use
+% the table of contents if you are preparing your paper for publication in the
+% EPiC series
+
+\setcounter{tocdepth}{2}
+% {\small \tableofcontents}
+
+%\section{To mention}
+%
+%Processing in EasyChair - number of pages.
+%
+%Examples of how EasyChair processes papers. Caveats (replacement of EC
+%class, errors).
+
+\pagestyle{empty}
+
+%------------------------------------------------------------------------------
+\section{Markdown to Latex Using APA 6
+Style}\label{markdown-to-latex-using-apa-6-style}
+
+If you have to use the American Psychological Association Style version
+6 (apa6) then this package of templates and scripts might be just what
+you need.
+
+Using the style if you have to do it manually in Word is a pain. These
+templates and scripts allow you to automatically generate apa6 compliant
+documents with the minimum of fuss and effort. Your citations are also
+created and formatted properly.
+
+\subsection{The Process}\label{the-process}
+
+These templates and scripts use Markdown as the document markup
+language, they then convert the Markdown document to LaTeX and run biber
+to format the bibliography and citations and finally convert the whole
+document to a properly formatted PDF. That means that you need some
+software installed on your system before you can begin.
+
+\subsection{Pre-Requisites}\label{pre-requisites}
+
+The set up is the most time consuming thing about this package. Once you
+have set up your system then creating documents is quick and simple. You
+need to be able to issue simple commands at the terminal but most people
+can manage to do that.
+
+This set up is tested to work on MacOS 10.8.2 using Pandoc 1.11.1 . It
+will no doubt work on Linux with perhaps minor mods to the paths in the
+scripts. It will also probably work on Windows using a shell emulator. I
+don't know about Windows so you are on your own there!
+
+First you need to install
+\href{http://johnmacfarlane.net/pandoc/installing.html}{Pandoc} . It's
+quick and simple and once installed it's seamless to run. Once you have
+installed you should open Terminal and at the prompt type
+\texttt{pandoc -{}-version} to check that you have a good install. If
+Pandoc tells you its version number you are good to go.
+
+Now you need to install a LaTeX distribution. This is a bigger job - the
+distributions are quite large. \href{http://tug.org/mactex/}{Here's} a
+good Mac distribution. There are distributions for other platforms.
+
+Make a cup of coffee and set the install running. Once you have LaTeX
+installed find the TeX Live Utility and launch it. Use it to install the
+\texttt{apa6} package. You will need this package to format your
+documents according to APA style.
+
+Once you have all of those things ready you need to install these
+scripts.
+
+\subsection{Installation}\label{installation}
+
+Either clone the Git repo off Bitbucket or download the zip file from
+the same location. Put the scripts into a directory which will be the
+directory you use to generate your documents. We'll call this
+\texttt{maindir}.
+
+Take the \texttt{apa6template.tex} document and put it into
+\texttt{/usr/local/share/pandoc-1.11/data/templates/apa6template.tex} .
+That path will be slightly different if you have a different version of
+Pandoc installed. Modify it to suit.
+
+There are now a number of files left in \texttt{maindir}:
+
+\begin{itemize}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  \texttt{abstract.md} is where you enter your document abstract
+\item
+  \texttt{affiliations.md} is where you enter your affiliations for the
+  title page
+\item
+  \texttt{APATemplate.md} is a Markdown template that is set up for you
+  to use to actually write your document. Copy and rename it to use if
+  for your own document.
+\item
+  \texttt{shorttitle.md} is where you enter the short title for your
+  document
+\item
+  \texttt{keywords.md} which is where you enter your document keywords.
+\item
+  \texttt{createpdf.sh} is a script which you will use to create your
+  final PDF document. It runs PDFLaTeX and biber multiple times to
+  create the document, the citations and the bibliography.
+\item
+  \texttt{md2pdf.sh} creates a PDF but doesn't run multiple passes or
+  run biber. It is for doing a quick document generate to check
+  formatting and maths.
+\item
+  \texttt{md2tex.sh} takes your Markdown document and generates a LaTeX
+  document from it. This is useful if you want to debug problems in your
+  document.
+\item
+  \texttt{tex2pdf.sh} is the script that you'd use after you used the
+  previous script. For instance if you made mods to the tex file you
+  could then convert to PDF using this script.
+\item
+  \texttt{cleantex.sh} when you run the build command LaTeX creates all
+  sorts of additional files in \texttt{maindir}. Sometimes you feel like
+  you'd like to clean those files up. Sometimes you find aberrant
+  behaviour - particularly when you are debugging a .tex file. This
+  script can help be removing much of the detritus from
+  \texttt{maindir}. Use with care and have a look at it and comment out
+  any file types you don't want removed.
+\end{itemize}
+
+You need to have a bibliography file in \texttt{maindir}. The name of
+this file is set in \texttt{apa6template.tex}. Currently it is set to
+\texttt{bibliography.bib} you can either call your \texttt{.bib} file
+that or modify the template to suit the name of your \texttt{.bib} file.
+If you need a bibliography app, google for Jabref.
+
+You should open Terminal and cd to \texttt{maindir} then run
+\texttt{chmod 755 *.sh} this will ensure that your scripts are
+executable.
+
+\subsection{Using the Scripts}\label{using-the-scripts}
+
+Here's the short version:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  Copy the \texttt{APATemplate.md} document and write your document in
+  the copy you've made.
+\item
+  Populate the keywords, affiliations, abstract and shorttitle
+  documents.
+\item
+  When you have your document ready in \texttt{maindir} create a PDF of
+  it by running \texttt{./createpdf.sh} from within \texttt{maindir}.
+  This will create various files in \texttt{maindir} most of which don't
+  matter. The two files you are interested in are the file called
+  \texttt{yourfilename.tex} and \texttt{yourfilename.pdf}.
+\end{enumerate}
+
+Now the long version.
+
+\subsubsection{Your Markdown Document}\label{your-markdown-document}
+
+The first three lines of the Markdown template are meta data that is
+passed into the apa6template.tex document by Pandoc. You need to ensure
+that these are the first three lines in the document with no blank space
+before or between them.
+
+The content of these lines is:
+
+\begin{enumerate}
+\def\labelenumi{\arabic{enumi}.}
+\itemsep1pt\parskip0pt\parsep0pt
+\item
+  The document title
+\item
+  The Author or Authors names
+\item
+  The format of the final document. This has three options: \texttt{man}
+  is the manuscript version of APA 6 style, \texttt{doc} is a plain
+  document format and \texttt{jou} is the two column journal style. Set
+  this parameter to suit your current purpose.
+\end{enumerate}
+
+You can enter either
+\href{http://code.ahren.org/markdown-cheatsheet}{Markdown} format text
+or verbatim LaTeX or a mixture of both. The ability to enter verbatim
+LaTeX is important, particularly if you need to include formulas and
+other maths in your document. Pandoc will pass it through
+unchanged\ldots{}with a couple of exceptions.
+
+If you want to set in-line maths then you need to escape the slashes in
+the environment like this:
+\texttt{\textbackslash{}\textbackslash{}(...\textbackslash{}\textbackslash{})}
+the additional \texttt{\textbackslash{}} gets stripped on the way
+through. If you want to set display maths then the same applies
+\texttt{\textbackslash{}\textbackslash{}{[}...\textbackslash{}\textbackslash{}{]}}.
+
+However if you are just setting up another environment you don't need to
+double escape:
+
+\begin{verbatim}
+\begin{equation}
+...
+\end{equation}
+\end{verbatim}
+
+Will work just fine. Similarly if you set up some other environment and
+then put display or inline maths inside that environment you
+\emph{don't} need to double escape it. So:
+
+\begin{verbatim}
+\begin{APAenumerate}
+\item Some text with maths \(...\)
+\end{APAenumerate}
+\end{verbatim}
+
+Will work fine too.
+
+Have a good read of the PDF document that is installed with the apa6
+package using the TeX Live Utility. You can access it by finding the
+apa6 package and then double clicking it and then clicking the PDF. It
+tells you all about the capabilities of the package and how to use them.
+
+\subsubsection{Running Head on Title
+Page}\label{running-head-on-title-page}
+
+If you \emph{don't} want a running head on the title page then find this
+text in the preamble of the \texttt{apa6template.tex} document:
+
+\begin{verbatim}
+\fancypagestyle{titlepage}{%
+  \lhead{}%
+   \rhead{\thepage}%
+}
+\end{verbatim}
+
+Make sure it is \emph{not} commented.
+
+If you \emph{do} want a running head on the title page of your
+manuscript - as per strict APA 6 Style then \emph{comment out} the above
+text.
+
+\subsection{Issue resolution \&
+Bugfixes}\label{issue-resolution-bugfixes}
+
+\subsubsection{Issue 1}\label{issue-1}
+
+A necessary file \texttt{rgb.tex} was missing from the distribution. It
+has now been added. It should be placed in \texttt{maindir}.
+
+\subsubsection{Issue 2}\label{issue-2}
+
+Added \texttt{\textbackslash{}usepackage\{fancyhdr\}} to
+\texttt{apa6template.tex}.
+
+\subsubsection{Issue 3}\label{issue-3}
+
+This issue arose as a discussion about the use of Pandoc citations as
+opposed to using LaTeX style citations as verbatim LaTeX. One of the
+users explored the issue and the findings are contained in
+\href{https://bitbucket.org/zuline/md2latex/issue/3/pandoc-citations-not-supported}{this
+discussion.}
+
+The bottom line is that the best outcomes will likely be achieved by
+using the LaTeX citation approach not the Pandoc citation approach.
+%------------------------------------------------------------------------------
+
+\label{sect:bib}
+%\bibliographystyle{plain}
+%\bibliographystyle{alpha}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{abbrv}
+%\bibliographystyle{apalike}
+\bibliographystyle{apa}
+%\bibliographystyle{authortitle}
+\bibliography{easychair}
+
+%------------------------------------------------------------------------------
+%\appendix
+%\section{First Appendix}
+%\label{sect:appendix-first}
+%Text
+%\section{Second Appendix}
+%\label{sect:appendix-second}
+%Text
+
+%------------------------------------------------------------------------------
+% Index
+%\printindex
+
+%------------------------------------------------------------------------------
+\end{document}

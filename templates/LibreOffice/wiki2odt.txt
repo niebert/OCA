@@ -1,0 +1,35 @@
+% WikiMedia to ODT Conversion
+% Name: Engelbert Niehaus
+% Date: April 12th, 2016
+
+
+Files & Processing
+----------------------
+
+The list describes the purpose of files and 
+provides a small survey how to use these files for converting documents:
+
+* <b>odtreference.odt:</b> File that is used as layout template for ODT.
+* <b>authors.txt:</b> List of Authors of the document.
+* <b>title.wiki:</b> Title of the document
+* <b>shorttitle.wiki:</b> Short title of the document
+* <b>keywords.wiki:</b> Keywords for the document
+
+
+
+Commands for WikiMedia to ODT
+-----------------------------
+
+The following command converts a wikimedia file to ODT
+
+```
+pandoc -f mediawiki -S --reference-odt odtreference.odt -o outfile.odt infile.wiki
+```
+
+Learning Markdown & WikiMedia
+-----------------------------
+
+* Pandoc Demo Scripts <http://pandoc.org/demos.html>
+* Learning Markdown <http://www.markdowntutorial.com>
+* Learning WikiMedia <https://en.wikipedia.org/wiki/Wikipedia:Tutorial>
+

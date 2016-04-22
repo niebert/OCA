@@ -23,6 +23,7 @@ if [ -z "$2" ]
     # echo "Outfile set to: $outfile"
     #exit 1
 fi
-echo "Source File:      $1"
+infile=$1
+echo "Source File:      $infile"
 echo "Destination File: $outfile"
-pandoc -t html5 --template=tpl4reveal.html  --standalone --section-divs --variable theme="beige" --variable transition="slide" $1 -o $outfile
+pandoc -t html5 --template=tpl4reveal.html  --standalone --section-divs --variable theme="beige" --variable transition="slide" $infile -o $outfile

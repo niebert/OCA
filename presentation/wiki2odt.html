@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>WikiMedia to ODT Conversion</title>
+
+		<meta name="description" content="WikiMedia to ODT Conversion">    
+
+		<meta name="author" content="Patricia D Souza" />
+
+		<meta name="apple-mobile-web-app-capable" content="yes" />
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+
+		<link rel="stylesheet" href="reveal/css/reveal.css">
+		<link rel="stylesheet" href="reveal/css/theme/beige.css" id="theme">
+
+		<!-- For syntax highlighting -->
+		<link rel="stylesheet" href="reveal/lib/css/zenburn.css">
+
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'reveal/css/print/pdf.css' : 'reveal/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+
+		<!--[if lt IE 9]>
+		<script src="reveal/lib/js/html5shiv.js"></script>
+		<![endif]-->
+	</head>
+
+	<body>
+		
+		<div class="reveal">
+			<!-- Any section element inside of this container is displayed as a slide -->
+			<div class="slides">
+
+				<section>
+				<h1>WikiMedia to ODT Conversion</h1>
+					<h3>Name: Engelbert Niehaus</h3>
+					<p>
+					<h4>Date: April 12th, 2016</h4>
+					</p>
+				</section>  
+
+
+<section id="files-processing" class="level2">
+<h2>Files &amp; Processing</h2>
+<p>The list describes the purpose of files and provides a small survey how to use these files for converting documents:</p>
+<ul>
+<li><b>odtreference.odt:</b> File that is used as layout template for ODT.</li>
+<li><b>authors.txt:</b> List of Authors of the document.</li>
+<li><b>title.wiki:</b> Title of the document</li>
+<li><b>shorttitle.wiki:</b> Short title of the document</li>
+<li><b>keywords.wiki:</b> Keywords for the document</li>
+</ul>
+</section>
+<section id="commands-for-wikimedia-to-odt" class="level2">
+<h2>Commands for WikiMedia to ODT</h2>
+<p>The following command converts a wikimedia file to ODT</p>
+<pre><code>pandoc -f mediawiki -S --reference-odt odtreference.odt -o outfile.odt infile.wiki</code></pre>
+</section>
+<section id="learning-markdown-wikimedia" class="level2">
+<h2>Learning Markdown &amp; WikiMedia</h2>
+<ul>
+<li>Pandoc Demo Scripts <a href="http://pandoc.org/demos.html">http://pandoc.org/demos.html</a></li>
+<li>Learning Markdown <a href="http://www.markdowntutorial.com">http://www.markdowntutorial.com</a></li>
+<li>Learning WikiMedia <a href="https://en.wikipedia.org/wiki/Wikipedia:Tutorial">https://en.wikipedia.org/wiki/Wikipedia:Tutorial</a></li>
+</ul>
+</section>
+			</div>
+		</div>
+
+<script src="reveal/lib/js/head.min.js"></script>
+<script src="reveal/js/reveal.js"></script>
+
+<script>
+ 			// Full list of configuration options available at:
+			// https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+
+				theme: 'beige',   
+				transition: 'slide', // none/fade/slide/convex/concave/zoom
+
+				math: {
+					// mathjax: 'http://cdn.mathjax.org/mathjax/latest/MathJax.js',
+					mathjax: './mathjax/MathJax.js',
+					config: 'TeX-AMS_HTML-full'
+				},
+
+				// Optional reveal.js plugins
+				dependencies: [
+					{ src: './reveal/lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: './reveal/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: './reveal/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: './reveal/plugin/zoom-js/zoom.js', async: true },
+					{ src: './reveal/plugin/notes/notes.js', async: true },
+					{ src: './reveal/plugin/math/math.js', async: true }
+				]
+			});
+
+</script>
+
+
+</body>
+</html>

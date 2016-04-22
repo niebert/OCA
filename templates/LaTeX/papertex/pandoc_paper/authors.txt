@@ -1,0 +1,4 @@
+Bert Niehaus|niehaus@uni-landau.de|University Koblenz-Landau|Thanks 1
+Paul Meyer|meyer@mail.com|Uni Meyer|Thanks 2
+Anna Miller|miller@mail.com|Uni Miller|Thanks 3
+Charles Sinner|Siner@mail.com|Uni Meyer|Thanks 4
