@@ -6,3 +6,6 @@ The folder "template/" contains an templates for publications that is intended t
 * Freemind Mind Map of the brainstorming ideas
 * ODT LibreOffice Export File from FreeMind as Office Document and
 * an Application of the version to EasyChair Templates of the Conference Pilot
+
+The folder "presentation/" contains a subfolder "reveal".  This folder stores the reveal library https://github.com/hakimel/reveal.js/ for  Reveal.js to create presentation like http://lab.hakim.se/reveal-js
+Further more the folder presentation contains a MathJax version, so that the presentation work offline as well (see http://www.mathjax.org ).
